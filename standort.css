@@ -27,7 +27,7 @@ main {
     padding: 1em;
 }
 #bildgross {
-    
+
     float left;
     border: 1px solid #707070;
     width: 33em;
@@ -95,16 +95,132 @@ footer > section > p {
 #text{
     border: 1px solid #707070;
 }
-#label {
+footer > section > ul {
     background-color: white;
     color: black;
     border: 1px solid #707070;
     /*box-shadow: 7px 7px 30px black;*/
     max-width: 80%;
-    max-height: 80%;
+
     padding: 0.2em;
+    min-height: 5em;
+    margin:auto;
 }
-footer{
+footer {
+    text-align: center;
+    margin: 2em 0 2em 0;
+    color: rgb(235, 235, 235);
+    font-weight: normal;
+}
+html {
+    font-family: Arial;
+    font-size: 13pt;
+    background-color: darkgrey;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(235, 235, 235);
+    border: 0px solid #a8aeb1;
+    border-bottom-width: 2px;
+
+    padding: 0em 1em 0em 1em;
+    font-variant: small-caps;
+
+    display: flex;
+    justify-content : space-between;
+    align-content: center;
+    align-items: center;
+}
+header > img {
+    max-width: 15%;
+}
+main {
+    padding: 1em;
+}
+#bildgross {
+
+    float left;
+    border: 1px solid #707070;
+    width: 33em;
+    height: 31.5em;
+    padding: 0.2em;
+    background: #eaeaea;
+    margin: 1em;
+    margin-right: 1em;
+    box-shadow: 5px 5px 15px black;
+}
+
+#bilder {
+    margin: 1em;
+    max-width: 50%;
+    float: right;
+    text-align: right;
+    margin-left: 1em;
+}
+
+main > aside > a > img {
+    border: 1px solid #707070;
+    width: 10em;
+    height: 10em;
+    padding: 0.2em;
+    background: #eaeaea;
+    box-shadow: 5px 5px 15px black;
+}
+#News {
+    margin-left: 3em;
+    color: black;
+}
+#News:hover {
+    color: red;
+}
+footer > section > button {
+    display: block;
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 0.25em;
+}
+
+
+footer > section > button:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+footer > section > p {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#text{
+    border: 1px solid #707070;
+}
+footer > section > ul {
+    background-color: white;
+    color: black;
+    border: 1px solid #707070;
+    /*box-shadow: 7px 7px 30px black;*/
+    max-width: 80%;
+
+    padding: 0.2em;
+    min-height: 5em;
+    margin:auto;
+}
+footer {
     text-align: center;
     margin: 2em 0 2em 0;
     color: rgb(235, 235, 235);

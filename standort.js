@@ -51,13 +51,13 @@ senden(memoList,textlist) {
     let stext = document.getElementById("text").value;
     var data = stext.length;
     let name = prompt("Danke für deine Nachicht! Bitte gib noch deinen Namen ein: ");
-    if (name === ""){
+    if (name === "" || name === null){
         return;
     } else {
         let z = new Delete();
         z.loeschen(memoList);
         let t = new Neu();
-        t.insert(textlist,stext);
+        t.insert(textlist,stext,name);
     }
       }
 }
@@ -65,12 +65,12 @@ class Neu {
     constructor() {
 
     }
-insert(textlist,stext){
+insert(textlist,stext,name){
             let lElement = document.createElement("li");
             textlist.appendChild(lElement);
 
             let lTextElement = document.createElement("label");
-            lTextElement.textContent = stext;
+            lTextElement.textContent = stext + " - gefragt von : " + name;
             lElement.appendChild(lTextElement);
     }
 }
