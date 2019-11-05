@@ -1,40 +1,39 @@
-
-class App {
-    constructor (pageList){
-        this._pages = pageList;
+//Um auf
+class PageStandort {
+    constructor(app) {
+        this._app = app;
     }
-    run () {
-        console.log("Anwendung gestartet");
+    async show() {
+        console.log("Standortseite");
+        let html = await fetch("standort.html");
 
-        window.addEventListener("hashchange", () => {
-            console.log("Hash changed");
-            this._handleRouter();
+        let htmlContent = "";
+        if (html.ok) {
+            htmlContent = await html.text();
+        }
+        this._app.setPageContent(htmlContent);
+
+        //Klassen etc.
+        let firstButton = document.getElementById("button1");
+        let secondButton = document.getElementById("button2");
+        let memoList = document.querySelector("body > footer > section > p > textarea");
+        let textlist = document.querySelector("body > footer > section > ul");
+
+        firstButton.addEventListener("click", function() {
+
+            let b = new Delete();
+            b.loeschen(memoList);
         });
-    }
-    _handleRouter() {
-        let pageUrl = location.hash.slice(1);
-        let matches = null;
-        let page = this._pages.find(p => matches = pageUrl.match(p.url));
-        //location.href = ("." + page.resource);
-        this.currentPageOj = new page.klasse(this);
-        this.currentPageOj.show();
-    }
-}
-window.addEventListener("load", function() {
-    let firstButton = document.getElementById("button1");
-    let secondButton = document.getElementById("button2");
-    let memoList = document.querySelector("body > footer > section > p > textarea");
-    let textlist = document.querySelector("body > footer > section > ul");
+        secondButton.addEventListener("click", function() {
+            let s = new Post();
+            s.senden(memoList,textlist);
+        });
 
-    firstButton.addEventListener("click", function() {
-        let b = new Delete();
-        b.loeschen(memoList);
-    });
-    secondButton.addEventListener("click", function() {
-        let s = new Post();
-        s.senden(memoList,textlist);
-    });
-});
+    }
+
+
+}
+//Zur Anwendung, Frage schreiben etc.
 class Delete {
     constructor(){
 
@@ -72,5 +71,8 @@ insert(textlist,stext,name){
             let lTextElement = document.createElement("label");
             lTextElement.textContent = stext + " - gefragt von : " + name;
             lElement.appendChild(lTextElement);
+            //let neuname = document.creatElement
+            //neuname.textContant = "-" + name;
+            //lElement.appendChild()
     }
 }

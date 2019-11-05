@@ -1,73 +1,41 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Standortübersicht DHBW</title>
-        <link rel="stylesheet" href="standort.css" />
-        <script src="./standort.js"></script>
-        <script type="text/javascript">
-            let pages = [
-                {
-                    url: "page-details",
-                    resource: "/Portfolio/page-details.html",
-                    klasse: pageDetail
-                },
-                {
-                    url: "about",
-                    resource: "about.html"
-                }
-            ];
-            window.addEventListener("load", function() {
-                let app = new App(pages);
-                app.run();
-            });
-        </script>
-    </head>
-    <body>
-        <header>
-            <img src="DHBW.png">
-        <h1> Hier siehst du die Standorte der DHBW</h1>
-        </header>
-        <main>
+<main>
 
-                <img src="uebersicht.jpeg" id="bildgross"/>
+        <img src="uebersicht.jpeg" id="bildgross"/>
 
-            <aside id="bilder">
-                <a href="#"> <img src="KA.jpg" title="DHBW Karlsruhe"/> </a>
-                <a href="#"> <img src="ST.jpg" title="DHBW Stuttgart"/> </a>
-                <a href="#"> <img src="heil.jpg" title="DHBW Heilbron"/> </a>
-                <a href="#"> <img src="ma.jpg" title="DHBW Mannheim"/> </a>
-                <a href="#"> <img src="heil.jpg" title="DHBW Heidenheim"/> </a>
-                <a href="#"> <img src="rav.jpg" title="DHBW Ravensburg"/> </a>
-                <a href="#"> <img src="loe.jpg" title="DHBW Lörrach"/> </a>
-                <a href="#"> <img src="vs.jpg" title="DHBW Villigen-Schwenningen"/> </a>
-                <a href="#"> <img src="mos.jpg" title="DHBW Mosbach"/></a>
-            </aside>
-        </main>
-        <a href="#" id="News"> Hier geht es zu den News</a>
+    <aside id="bilder">
+        <a href="#/page-details"> <img src="KA.jpg" title="DHBW Karlsruhe"/> </a>
+        <a href="#"> <img src="ST.jpg" title="DHBW Stuttgart"/> </a>
+        <a href="#"> <img src="heil.jpg" title="DHBW Heilbron"/> </a>
+        <a href="#"> <img src="ma.jpg" title="DHBW Mannheim"/> </a>
+        <a href="#"> <img src="heil.jpg" title="DHBW Heidenheim"/> </a>
+        <a href="#"> <img src="rav.jpg" title="DHBW Ravensburg"/> </a>
+        <a href="#"> <img src="loe.jpg" title="DHBW Lörrach"/> </a>
+        <a href="#"> <img src="vs.jpg" title="DHBW Villigen-Schwenningen"/> </a>
+        <a href="#"> <img src="mos.jpg" title="DHBW Mosbach"/></a>
+    </aside>
+</main>
+<a href="#" id="News"> Hier geht es zu den News</a>
 
-        <footer>
-            <section>
-                <p>Fragen rund um die DHBW:</p>
-                <p>
-                    <textarea cols="70" rows="10" id="text">
-                        Deine Frage...
-                    </textarea>
-                </p>
-                    <button id="button1">
-                        Text löschen
-                    </button>
-                    <button id="button2">
-                        Test senden
-                    </button>
-            </section>
-            <section>
-                <p>Schon gestellte Fragen:</p>
-                <ul>
+<footer>
+    <section>
+        <p id="schrift">Fragen rund um die DHBW:</p>
+        <p>
+            <textarea cols="70" rows="10" id="text">
+                Deine Frage...
+            </textarea>
+        </p>
+            <button id="button1">
+                Text löschen
+            </button>
+            <button id="button2">
+                Test senden
+            </button>
+    </section>
+    <section>
+        <p id="schrift">Schon gestellte Fragen:</p>
+        <ul>
 
-                </ul>
-            </section>
-            <p class:"letzterSatz"> "Zitat" </p>
-        </footer>
-    </body>
-</html>
+        </ul>
+    </section>
+    <p id="schrift"> "Zitat" </p>
+</footer>
