@@ -12,4 +12,5 @@ class PageNews {
         }
         this._app.setPageContent(htmlContent);
     }
+
 }
