@@ -261,6 +261,8 @@ span.sternebewertung > label:hover ~ input:checked ~ label {
 
 /* Für Handybildschirme */
 
+/* Beschriftung von Computeransicht trifft hier ebensfalls zu nur mit angepassten Parametern */
+
 @media (max-width: 950px) {
                         {
 padding: 1em;
