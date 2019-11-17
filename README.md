@@ -26,3 +26,8 @@ Die Schriftgröße und Schriftart, wurde bewusst gewählt und die Webseite ist �
 
 ## Probleme mit GitHub:
 Wir hatten beim zusmmenführen der Dateien erheblich Probleme mit GitHub, wobei schon erstellte Dateien bei einem merge plötzlich fehlten. Daher kann über die Anzahl an commits keine Aussage darüber geben, wie viel welches Gruppenmitglied erstellt hat. Hierzu dient die Beschreibung oben. 
+
+
+##Newsseite: page-news.html, .css, .js, page-news-Heilbronn.html, .css, .js, page-news-Heidelberg.html, .css, .js
+Diese Seite zeigt die News einiger Dualen Hochschulen in BW an. Auf der Hauptseite sind die jeweiligen Orte und ihre Geschehnisse aufgelistet. Dadurch lässt sich schnell sehen wo was passiert. Ganz unten lässt sich das Impressum, der Kontakt und der Datenschutz ansehen. Auch lässt sich durch den Link "Oben" schnell und einfach nach ganz oben navigieren. (Erstellt durch Alex)
+Wird auf eine Nachricht geklickt, so wird man auf eine Seite weitergeleitet, auf der man dann die aktuelle Nachricht lesen kann. Auf dieser Seite kann man einen Kommentar durch den Button "kommentieren" hinterlassen. Dadurch wird man durch ein Pop-Up-Fenster aufgefordert einen Benutzernamen anzulegen. Durch bestätigen kann man den Kommentartext eingeben. Durch weiteres bestätigen ist der Kommentar nun auf der Seite zu sehen. (Erstellt von Alex)
