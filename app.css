@@ -1,6 +1,6 @@
 /* Grundgerüst und Header für normale Computerbildschirme */
 html {
-    font-family: sans-serif;
+    font-family: Arial;
     font-size: 13pt;
     background-color: darkgrey;
 }
