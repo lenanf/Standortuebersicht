@@ -24,8 +24,8 @@ Am Ende der Seite wird angedeutet, dass man durch klicken der Buttons „Impress
 Die Schriftgröße und Schriftart, wurde bewusst gewählt und die Webseite ist „Responsive“. Sie wurde in mehreren digitalen Formaten in Atom unter „Responsive“ getestet. 
 (Erstellt von Larissa)
 
-## Probleme mit GitHub:
-Wir hatten beim zusmmenführen der Dateien erheblich Probleme mit GitHub, wobei schon erstellte Dateien bei einem merge plötzlich fehlten. Daher kann über die Anzahl an commits keine Aussage darüber geben, wie viel welches Gruppenmitglied erstellt hat. Hierzu dient die Beschreibung oben. 
-
 ## Newsseite: page-news.html, .css, .js, page-news-Heilbronn.html, .css, .js, page-news-Heidenheim.html, .css, .js)
 Die page-news-Seite zeigt die aktuellen Geschehnisse rund um die Dualen Hochschulen in Baden-Württemberg an. Der User kann auf ein aktuelles Geschehniss klicken, wodurch er weitergeleitet wird zur jeweiligen Seite mit den Nachrichten von dort. Auf dieser Seite können die News auch durch den Button "kommentieren" kommentiert werden. Hier wird dann in einem Pop-up-Fenster die Aufforderung zur Eingabe eines Benutzernamens gezeigt. Danach kann der Kommentar verfasst werden. Sobald dieser abgeschickt ist, wird der Nutzernamen und der Kommentar angezeigt. Dieser Kommentar wird aber nicht dauerhaft gespeichert. Ganz unten auf der Seite lässt sich auf das Impressum, Kontakt und Datenschutz zugreifen. Auch kann man nach ganz oben auf die Seite springen. 
+
+## Probleme mit GitHub:
+Wir hatten beim zusmmenführen der Dateien erheblich Probleme mit GitHub, wobei schon erstellte Dateien bei einem merge plötzlich fehlten. Daher kann über die Anzahl an commits keine Aussage darüber geben, wie viel welches Gruppenmitglied erstellt hat. Hierzu dient die Beschreibung oben. 
