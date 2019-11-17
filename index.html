@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title>Standortübersicht DHBW</title>
+
+            <!-- Script und Stysheet für den Header -->
+            <script src="./app.js" charset="utf-8"></script>
+            <link rel="stylesheet" href="app.css" />
+
+            <!-- Script und Stysheet der Hauptseite -->
+            <script src="./standort.js" charset="utf-8"></script>
+            <link rel="stylesheet" href="standort.css" />
+
+            <!-- Script und Stysheet der Standort-Dtailseite -->
+            <script src="./page-detail.js"></script>
+            <link rel="stylesheet" href="page-detail.css" />
+
+            <!-- Script und Stysheet der Standort-News-Seite -->
+            <script src="./page-news.js" charset="utf-8"></script>
+            <link rel="stylesheet" href="page-news.css" />
+
+            <!-- Anwendung starten -->
+            <script type="text/javascript">
+                window.addEventListener("load", function() {
+                let pages = [
+                    {
+                        url: "/page-detailDHBW",
+                        klasse: PageDetail
+                    },
+                    {
+                        url: "/page-news",
+                        klasse: PageNews
+                    },
+                    {
+                        url: "",
+                        klasse: PageStandort
+                    },
+                    {
+                        url: "/",
+                        klasse: PageStandort
+                    }
+                ];
+                let app = new App(pages);
+                app.run();
+                });
+            </script>
+        </head>
+        <body>
+            <!-- Überschrift + Logo -->
+            <header>
+                <img src="bilder\DHBW.png">
+            <h1> Hier siehst du die Standorte der DHBW</h1>
+            </header>
+        <div id="content">
+         <!-- Hierin werden die verschiedenen Seiten geladen -->
+        </div>
+    </body>
+</html>

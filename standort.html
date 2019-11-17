@@ -1,0 +1,45 @@
+<main class="mainstand">
+
+    <img src="bilder\uebersicht.jpeg" id="bildgross"/>
+    <!-- Die Bilder fungieren als Link zu den jeweiligen Standortdetail-Seiten, nur für das erste Bild ist eine Seite ausprogrammiert -->
+    <aside id="bilder">
+        <a href="#/page-detailDHBW"> <img src="bilder\KA.jpg" title="DHBW Karlsruhe"/> </a>
+        <a href="#"> <img src="bilder\ST.jpg" title="DHBW Stuttgart"/> </a>
+        <a href="#"> <img src="bilder\heil.jpg" title="DHBW Heilbron"/> </a>
+        <a href="#"> <img src="bilder\ma.jpg" title="DHBW Mannheim"/> </a>
+        <a href="#"> <img src="bilder\heil.jpg" title="DHBW Heidenheim"/> </a>
+        <a href="#"> <img src="bilder\rav.jpg" title="DHBW Ravensburg"/> </a>
+        <a href="#"> <img src="bilder\loe.jpg" title="DHBW Lörrach"/> </a>
+        <a href="#"> <img src="bilder\vs.jpg" title="DHBW Villigen-Schwenningen"/> </a>
+        <a href="#"> <img src="bilder\mos.jpg" title="DHBW Mosbach"/></a>
+    </aside>
+</main>
+<!-- Link zu News-Seite -->
+<a href="#/page-news" id="News"> Hier geht es zu den News</a>
+
+<footer class="footstand">
+    <section>
+        <p id="schrift">Fragen rund um die DHBW:</p>
+        <p>
+        <!-- Hier besteht die Möglichkeit Fragen zu stellen -->
+            <textarea cols="70" rows="10" id="textar" placeholder="Deine Frage..." >
+            </textarea>
+        </p>
+        <!-- Die Frage kann durch Klicken des Button wieder gelöscht werden -->
+            <button id="button1">
+                Text löschen
+            </button>
+        <!-- Die Frage kann durch Klicken des Button "gesendet" werden und wird drauf in "Schon gestellte Fragen" geordnet -->
+            <button id="button2">
+                Test senden
+            </button>
+    </section>
+    <!-- Hier befinden sich die bereits abgeschickten Fragen -->
+    <section>
+        <p id="schrift">Schon gestellte Fragen:</p>
+        <ul id="listeul">
+
+        </ul>
+    </section>
+    <p id="schrift2"> "Vereint Theorie und Praxis" </p>
+</footer>
