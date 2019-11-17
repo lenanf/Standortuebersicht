@@ -61,7 +61,7 @@ class Post {
 senden(memoList,textlist) {
     let stext = document.getElementById("textar").value;
     var data = stext.length;
-    let name = prompt("Danke für deine Nachicht! Bitte gib noch deinen Namen ein: ");
+    let name = prompt("Danke für deine Nachricht! Bitte gib noch deinen Namen ein: ");
     if (name === "" || name === null){
         return;
     } else {
