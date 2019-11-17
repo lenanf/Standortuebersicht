@@ -37,7 +37,7 @@ class PageDetail {
         }
         // Löschen Methode
         loeschen(memoList) {
-            let textar = document.getElementById("textar").value = "";
+            let text = document.getElementById("textar").value = "";
         }
     }
     // Klasse zum "senden" des aktuellen Textes im Textfeld
