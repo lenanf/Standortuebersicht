@@ -11,7 +11,6 @@ class PageDetail {
             htmlContent = await html.text();
         }
         this._app.setPageContent(htmlContent);
-    }
 
             //Hier werden die Variablen für die Eventlistener und zu leerende/befüllende Felder erzeugt
             let firstButton = document.getElementById("buttonA");
@@ -29,8 +28,9 @@ class PageDetail {
                 let s = new Posten();
                 s.senden(memoList,textlist);
             });
-          
-    }
+   }
+}
+    
     //Klasse zum "löschen" des Textes im Textfeld
     class Remove{
         constructor(){
@@ -52,7 +52,5 @@ class PageDetail {
             if (name === "" || name === null){
                 return;
             }
-            }
         }
-    }
-}
+     }
