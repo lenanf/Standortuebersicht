@@ -1,2 +1,14 @@
 # Standortuebersicht
 Standortübersicht der DHBW mit News und Detailseiten
+
+## Detailseite (page-detailDHBW.html, page-detail.css und page-detail.js): 
+Die page-detailDHBW.html Seite beschreibt Details aller DHBWs und kann als weitere Seite aufgerufen werden. Ausgehend von der standort.html (Startseite) wird der User durch einen Klick auf das gewünschte Bild (Link) auf die Detailseite navigiert. Durch den „zurück“-Pfeil wird wieder die Startseite aufgerufen. 
+Die Detailseite zeigt die „Zahlen und Fakten“ aller Standorte der Dualen Hochschule in Baden-Württemberg. Als Quelle zur Darstellung der „Zahlen und Fakten“ diente die Online-Quelle: https://www.dhbw.de/fileadmin/user_upload/Dokumente/Schrifterzeugnisse/DHBW_Jahresbericht_2017_2018.pdf. Alle Informationen sind belegt und daher wahrheitsgetreu. 
+Die Seite zeigt eine Übersicht der DHs mit Bild und Kennzahlen. Durch Klicken auf den Namen der gewünschten DH wird man direkt auf deren Homepage weitergeleitet. Ursprünglich sollte es so gedacht sein, dass der User durch klicken des Bildes der gewünschten DHBW auf der Startseite, auf eine einzelne Seite mit nur deren „Zahlen und Fakten“ weitergeleitet wird. Da dies jedoch sehr wenig für dieses Portfolio gewesen wäre, wurde beschlossen alle DHs auf einer Seite darzustellen. 
+Um dem User das lesen angenehmer zu gestalten, wird die DH, welche mit der Maus in fiktive Berührung kommt, hellgrau unterlegt. 
+Im letzten Drittel der Seite wird ein Textfeld dargestellt. Dort können Fragen und Anregungen gesendet werden und wie auf der Startseite, wird nach Eingabe des gewünschten Textes und klicken des „Eingabe senden“ – Buttons, der User nach seinem Namen gefragt. Die Speicherung folgt in einem Array (oder einer Datenbank).
+Des Weiteren kann der User, wenn er möchte, eine Bewertung dieser Seite abgeben. Durch klicken der gewünschten Anzahl an Sternen, kann die Bewertung eingeloggt werde. Diese kann nach ausgewählter Wunschbewertung ebenso durch den „Eingabe senden“ – Button versendet werden. Die Speicherung folgt in einem Array (oder einer Datenbank). Die Sterne leuchten bei einer fiktiven Berührung mit der Maus auf (in Gelb) und können durch klicken des Buttons links neben „Ihre Bewertung“ gelöscht oder zurückgesetzt werden. 
+Die Umsetzung war leider sehr schwierig. Diese hat teils funktioniert und teilweise wird von einer Annahme ausgegangen. 
+Am Ende der Seite wird angedeutet, dass man durch klicken der Buttons „Impressum“, “Datenschutz“ und „Kontakt“ auf die jeweiligen Seiten weitergeleitet wird. Ebenso gelangt man durch klicken auf „Zum Anfang der Seite“ zurück zum Anfang und der User wird auf eine neue Seite weitergeleitet. 
+Die Schriftgröße und Schriftart, wurde bewusst gewählt und die Webseite ist „Responsive“. Sie wurde in mehreren digitalen Formaten in Atom unter „Responsive“ getestet. 
+(Erstellt von Larissa)

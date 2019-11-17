@@ -1,7 +1,6 @@
-html {
+/* html {
     min-height: 100%;
 
-    background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -12,80 +11,373 @@ body {
     padding: 0;
 }
 
-/** Allgemeine Schrifteinstellungen **/
-@import url('https://fonts.googleapis.com/css?family=Bellefair');
+/* Allgemeine Schrifteinstellungen **/
 
-html {
-    font-family: 'Bellefair', serif;
-    font-size: 16pt;
+/**html {
+    font-family: arial;
 }
 
-/** Header **/
 header {
+
     background-color: rgb(235, 235, 235);
     border: 0px solid #a8aeb1;
     border-bottom-width: 3px;
     padding: 0em 1em 0em 1em;
     font-variant: small-caps;
-
     display: flex;
     justify-content : space-between;
     align-content: center;
     align-items: center;
 }
+
 #logo {
     height: 3em;
 }
 
-/** Hauptbereich **/
-main {
+*/
+
+/* Für Computerbildschirme */
+/* Hauptbereich */
+main.generalview {
+
     padding: 1em;
+
 }
 
-textarea {
-	background-color: rgb(235, 235, 235);
-	width: 52em;
-	height: 10em;
-	border: 1px solid #cccccc;
-  border-bottom-width: 2px;
-	padding: 0.5em;
+/* Hier werden die Boxen angeordnet und die Eigentschaften der Boxen festgelegt */
 
-	font-family: Tahoma, sans-serif;
+.container {
+
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  grid-template-rows:310px 310px 310px 310px 310px 310px 310px 310px 310px 310px 310px 310px ;
+  grid-template-columns: 100%;
+  align-content: center;
+  border: 3px solid #cccccc;
+  padding: 0.5em
+
 }
 
-main > center {
+/* Anordnung und Eigenschaften der Bilder in der Box werden festgelegt */
+
+.main-column {
+    display: flex;
+    flex: 1;
+    font-family: arial;
+}
+
+/* Anordnung und Eigenschaften des Textes in der Box werden festgelegt */
+
+.sidebar {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar > div {
+  background-size: auto;
+  margin:  0.3em;
+  font-size: 100%;
+}
+
+
+.sidebar > div > h2 {
+
+  margin:  0.5em;
+
+}
+
+.container > div {
+
+  border: 1px solid #cccccc;
+  padding: 0.2em
+  align-content: center;
+}
+
+.container > div:hover {
+
+  background-color: lightgrey;
+  opacity: 1.0;
+
+}
+
+/* Hauptansicht festgelegt */
+
+main.generalview > center {
     max-width: 100%;
     max-height: 100%;
-    float: center;
-    text-align: left;
-}
-main > center > img {
-    width: 100%;
-    height: 50%;
-
-}
-#bild{
-  height: 19em;
 }
 
-main > aside {
-    max-width: 50%;
-    float: right;
-    text-align: right;
+/* Eigenschaften der DHBW Bilder */
+
+#bildDH {
+
+  display: flex;
+  flex: 1;
+  padding: 0.2em;
 }
 
-main > aside > img {
-    border: 1px solid #707070;
+/*Eigenschaften des Titelbildes */
+
+#bild {
+  height: 25em;
+  width: 99.15%;
+  height: 50%;
+  border: 3px solid #707070;
+  padding: 0.2em;
+  background: #eaeaea;
+  margin-bottom: 2em
+}
+
+ /* Anordnung des Buttons im footer */
+
+footer.below > section > button {
+    display: block;
     width: 50%;
-    height: 50%;
-    padding: 0.2em;
-    background: #eaeaea;
-    margin-bottom: 10em;
-
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0.25em;
 }
-main > aside > h2 {
+
+/* Hover Effekt der Eingabe Buttons */
+
+footer.below > section > button:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+ /* Textanordnung im footer wird festgelegt */
+
+footer.below > section > p {
+      width: fit-content;
+      padding: 0.5em;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 10pt;
+    }
+
+
+footer.below > p {
+  width: fit-content;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 6pt;
+}
+
+/* Textfeld im footer */
+
+#textarea{
+    border: 1px solid #707070;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ footer.below {
     text-align: center;
     margin: 2em 0 2em 0;
-    color: rgb(120, 120, 120);
+    color: rgb(235, 235, 235);
     font-weight: normal;
+}
+
+ /* Eigentschaften der Buttons am Ende der Seite ( Impressum, Datenschutz, Kontakt und Zum Anfang der Seite ) */
+
+.klickup {
+ font-weight: normal;
+  margin-top: 3%;
+  magrin-left: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Sternebewertung */
+
+#Bewertung {
+ line-height: 50px;
+}
+
+/* Anordnung Sternebewertung auf der Seite */
+
+span.sternebewertung  {
+ float-center;
+}
+
+span.sternebewertung:not(:checked) > input {
+ display: None;
+}
+
+/* Hier werden die Sterne nebeneinander angeordnet */
+
+span.sternebewertung:not(:checked) > label {
+ float: Right;
+ width: 1em;
+ padding: 0.1em;
+ overflow: Hidden;
+ white-space: Nowrap;
+ cursor: Pointer;
+ font-size: 200%;
+ line-height: 1.2;
+ color: #D0D0D0;
+ text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
+ transition: all .5s;
+ margin-bottom: 2em;
+
+}
+
+ /* Eigenschaften der Sterne beim klicken */
+
+span.sternebewertung:not(:checked) > label:before {
+ content: '★ ';
+}
+
+span.sternebewertung > input:checked ~ label {
+ color: #FFD700;
+ text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+span.sternebewertung:not(:checked) > label:hover,
+span.sternebewertung:not(:checked) > label:hover ~ label  {
+ color: #FFD700;
+ text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+span.sternebewertung > input:checked + label:hover,
+span.sternebewertung > input:checked + label:hover ~ label,
+span.sternebewertung > input:checked ~ label:hover,
+span.sternebewertung > input:checked ~ label:hover ~ label,
+span.sternebewertung > label:hover ~ input:checked ~ label {
+ color: #F9B500;
+ text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+
+/* Für Handybildschirme */
+
+/* Beschriftung von Computeransicht trifft hier ebensfalls zu nur mit angepassten Parametern */
+
+@media (max-width: 950px) {
+                        {
+padding: 1em;
+
+}
+
+.container {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  grid-template-rows:155px 155px 155px 155px 155px 155px 155px 155px 155px 155px 155px 160px ;
+  grid-template-columns: 100%;
+  align-content: center;
+  border: 3px solid #cccccc;
+  padding: 0.5em
+}
+
+.main-column {
+  display: flex;
+    font-family: arial;
+    font-size: 6pt;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.sidebar > div {
+  align-content: center;
+  margin:  0.3em;
+}
+
+.sidebar > div > h2 {
+  margin:  0.5em;
+}
+
+.container > div {
+   border: 1px solid #cccccc;
+   padding: 0.2em
+   align-content: center;
+}
+
+/** Hellgrau Erhebung mit der Maus beim berühren eines Feldes des Containers **/
+
+.container > div:hover {
+    background-color: lightgrey;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+main.generalview > center {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#bildDH {
+  height: 19em;
+  padding: 0.1em
+}
+
+#bild {
+  height: 25em;
+  width: 98%;
+  height: 50%;
+  border: 3px solid #707070;
+  padding: 0.2em;
+  background: #eaeaea;
+  margin-bottom: 2em
+}
+
+footer.below > section > button {
+    display: block;
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0.25em;
+}
+
+footer.below > section > button:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+/** Anordnung des Textes und der Bewertung im Footer **/
+
+footer.below > section > p {
+    width: fit-content;
+    padding: 0.5em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10pt;
+  }
+
+/** Anordnung des Textfeldes im Footer **/
+
+#textarea{
+    border: 1px solid #707070;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer.below > p {
+    width: fit-content;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 6pt;
+  }
 }
