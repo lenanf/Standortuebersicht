@@ -24,5 +24,5 @@ Am Ende der Seite wird angedeutet, dass man durch klicken der Buttons „Impress
 Die Schriftgröße und Schriftart, wurde bewusst gewählt und die Webseite ist „Responsive“. Sie wurde in mehreren digitalen Formaten in Atom unter „Responsive“ getestet. 
 (Erstellt von Larissa)
 
-#Probleme mit Git-Hub:
+## Probleme mit Git-Hub:
 Wir hatten beim zuammenführen der Dateien gerheblich Probleme mit Git-Hub, wobei schon erstellte Dateien beieinem merge plötzlich fehlten. Daher kann über die Anazahl an commits keine Aussage darüber geben, wie viel welches Gruppenmitglied erstellt hat. Hierzu dient die Beschreibung oben. 
