@@ -8,7 +8,7 @@ class PageDetail {
 
         let htmlContent = "";
         if (html.ok) {
-            htmlContent = await html.text();
+            htmlContent = await html.eingabe();
         }
         this._app.setPageContent(htmlContent);
 
