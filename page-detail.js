@@ -37,7 +37,7 @@ class PageDetail {
         }
         // Löschen Methode
         loeschen(memoList) {
-            let text = document.getElementById("textar").value = "";
+            let text = document.getElementById("text").value = "";
         }
     }
     // Klasse zum "senden" des aktuellen Textes im Textfeld
@@ -46,7 +46,7 @@ class PageDetail {
         }
     // Methode frägt den Name ab, wenn ein Name eingegeben wird, kann der Frage gesendet werden, wenn nicht, bleibt sie bestehen.
         senden(memoList,textlist) {
-            let stext = document.getElementById("textar").value;
+            let stext = document.getElementById("text").value;
             var data = stext.length;
             let name = prompt("Danke für deine Nachicht! Bitte gib noch deinen Namen ein: ");
             if (name === "" || name === null){
