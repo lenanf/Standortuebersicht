@@ -156,12 +156,14 @@ footer.below > section > button:hover {
  /* Textanordnung im footer wird festgelegt */
 
 footer.below > section > p {
-    width: fit-content;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-}
+      width: fit-content;
+      padding: 0.5em;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 10pt;
+    }
+
 
 footer.below > p {
   width: fit-content;
@@ -230,7 +232,7 @@ span.sternebewertung:not(:checked) > label {
 
 }
 
- /* Eigenschaften der Sterne beim klicken */ 
+ /* Eigenschaften der Sterne beim klicken */
 
 span.sternebewertung:not(:checked) > label:before {
  content: '★ ';
@@ -354,10 +356,11 @@ footer.below > section > button:hover {
 footer.below > section > p {
     width: fit-content;
     padding: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-}
+    font-size: 10pt;
+  }
 
 /** Anordnung des Textfeldes im Footer **/
 
