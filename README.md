@@ -1,12 +1,12 @@
 # Standortuebersicht
 Standortübersicht der DHBW mit News und Detailseiten
 
-Um unsere Seite aufzurufen müssen sie node installiert haben und über cmd zu dem Ordner navigieren und die server.js mit „node server.js“ aufrufen. Dann kann im Browser über „localhost:8080“ die Seite aufgerufen werden.
+Um unsere Seite aufzurufen müssen sie node installiert haben und über cmd zu dem Ordner navigieren und die Datei server.js mit „node server.js“ aufrufen. Dann kann im Browser über „localhost:8080“ die Seite aufgerufen werden.
 
 ## Allgemeine Beschreibung:
 Von der Startseite standort.html kann mit Klick auf eins der Kachelbilder auf die Detailseiten des jeweiligen Standorts navigiert werden. Der Link der ersten Detailseite ist ausprogrammiert. Über den Link „Hier geht es zu den News“ wird per Klick die News-Weite aufgerufen. Auf der Startseite selbst können noch Fragen zu der DHBW gestellt und die gestellten Fragen eingesehen werden.
 
-## Gerüst und Head: index.html und :
+## Gerüst und Head: index.html, app.js und app.css:
 In der index.html sind alle JavaScript-Dateien sowie die CSS-Dateien eingebunden. Hier wird die app.js aufgerufen und darüber auf die jeweils aufgerufene JS-Klasse bzw. deren Datei verwiesen. Über die app.js wird außerdem der „content“-Part der index.html mit der aufgerufenen Datei ersetzt und deren Inhalt aufgerufen. Im index.html befindet sich ebenfalls der Head mit Überschrift und dem DHBW-Logo, das dauerhaft bestehen bleibt.Die CSS-DAtei hierzu ist die app.css.(erstellt von Lena)
 
 ## Startseite: standort.html und standort.js :
@@ -23,3 +23,6 @@ Die Umsetzung war leider sehr schwierig. Diese hat teils funktioniert und teilwe
 Am Ende der Seite wird angedeutet, dass man durch klicken der Buttons „Impressum“, “Datenschutz“ und „Kontakt“ auf die jeweiligen Seiten weitergeleitet wird. Ebenso gelangt man durch klicken auf „Zum Anfang der Seite“ zurück zum Anfang und der User wird auf eine neue Seite weitergeleitet. 
 Die Schriftgröße und Schriftart, wurde bewusst gewählt und die Webseite ist „Responsive“. Sie wurde in mehreren digitalen Formaten in Atom unter „Responsive“ getestet. 
 (Erstellt von Larissa)
+
+#Probleme mit Git-Hub:
+Wir hatten beim zuammenführen der Dateien gerheblich Probleme mit Git-Hub, wobei schon erstellte Dateien beieinem merge plötzlich fehlten. Daher kann über die Anazahl an commits keine Aussage darüber geben, wie viel welches Gruppenmitglied erstellt hat. Hierzu dient die Beschreibung oben. 
